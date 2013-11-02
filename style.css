@@ -1,0 +1,405 @@
+/*
+Theme Name: Twenty Twelve - EDD
+Theme URI: http://wordpress.org/themes/twentytwelve
+Author: Spencer Finnell
+Author URI: http://spencerfinnell.com
+Description: The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background. For Easy Digital Downloads!
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: twentytwelve-edd
+Template: twentytwelve
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url('../twentytwelve/style.css');
+
+/** ------------------- */
+
+.single-download .hentry.type-download .entry-header {
+	display: none;
+}
+
+/** ------------------- */
+
+.item-details {
+	margin: -5% -5% 5%;
+	padding: 5%;
+	background: #242424;
+	overflow: hidden;
+}
+
+.item-preview {
+	width: 67%;
+	float: left;
+}
+
+.item-prices {
+	width: 30%;
+	float: right;
+}
+
+.item-details .entry-title {
+	font-weight: 300;
+	font-size: 24px;
+	color: #fff;
+	line-height: normal;
+	margin-bottom: 18px;
+}
+
+.item-details .edd_price_options ul {
+	color: #aaa;
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+
+.item-details .edd_price_options ul li {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	border: 1px solid #454545;
+	background: #333;
+}
+
+.item-details .edd_price_options ul li:hover,
+.item-details .edd_price_options ul li.active {
+	cursor: pointer;
+	background: #222;
+}
+
+.item-details .edd_price_options ul li:first-child {
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.item-details .edd_price_options ul li:last-child {
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.item-details .edd_price_options ul li label {
+	margin-bottom: 0;
+}
+
+.item-details .edd_price_options ul li input {
+	display: none;
+}
+
+.item-details .edd_price_options ul li .edd_price_option_price {
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.item-details .edd_price_options ul li .edd_price_option_name {
+	color: #aaa;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+	display: block;
+}
+
+.item-details .edd_price_options ul li .edd_price_option_sep {
+	display: none;
+}
+
+.item-details .edd_purchase_submit_wrapper a.edd-add-to-cart,
+.item-details a.edd_go_to_checkout {
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 16px;
+	width: 100%;
+	border: 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+.item-details .edd-cart-added-alert {
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin: 5px auto 0;
+	color: #fff;
+}
+
+.item-details .tag-links {
+	margin-top: 24px;
+	margin-top: 1.714285714rem;
+	word-wrap: break-word;
+}
+
+.item-details .tag-links,
+.item-details .tag-links a {
+	font-size: 12px;
+	color: #aaa;
+	text-decoration: none;
+}
+
+.item-details .tag-links a:hover {
+	color: #fff;
+}
+
+.item-details .edd-cp-container {
+	font-size: 12px;
+	color: #aaa;
+	margin: 20px 0;
+}
+
+.item-details .edd_cp_price {
+	margin: 5px 0;
+	display: block;
+	border: 0;
+	width: 100% !important;
+}
+
+.edd-variable-pricing-desc {
+	font-size: 11px;
+	margin: 4px 0 0;
+}
+
+/** ------------------- */
+
+.single-download .widget-area {
+	width: 100%;
+	float: none;
+	border-bottom: 4px double #ededed;
+	margin-bottom: 24px;
+	margin-bottom: 1.714285714rem;
+	padding-bottom: 24px;
+	padding-bottom: 1.714285714rem;
+}
+
+.single-download .widget-area .widget a:visited {
+	color: #757575;
+}
+
+.single-download .download-widgets:after {
+	clear: both;
+}
+
+.single-download .download-widgets:before,
+.single-download .download-widgets:after {
+	display: table;
+	content: "";
+}
+
+.single-download .download-widgets .widget {
+	float: left;
+	margin-bottom: 0;
+}
+
+.single-download .download-widgets.widgets-1 .widget {
+	width: 100%;
+}
+
+.single-download .download-widgets.widgets-2 .widget {
+	width: 48%;
+	margin-right: 4%;
+}
+
+.single-download .download-widgets.widgets-3 .widget {
+	width: 31%;
+	margin-right: 3%;
+}
+
+.single-download .download-widgets.widgets-4 .widget {
+	width: 23%;
+	margin-right: 2%;
+}
+
+.single-download .download-widgets .widget:last-child {
+	margin-right: 0;
+}
+
+/** ------------------- */
+
+.item-stats {
+	overflow: hidden;
+}
+
+.item-stat {
+	font-size: 40px;
+	line-height: normal;
+	float: left;
+	width: 40%;
+}
+
+.item-stat a {
+	text-decoration: none;
+}
+
+.item-stat:last-child {
+	border-right: 0;
+}
+
+.item-stat small {
+	font-size: 14px;
+	color: #aaa;
+	display: block;
+	margin-top: -8px;
+}
+
+.download-widgets .widget h3 {
+	margin-bottom: 0;
+}
+
+.download-widgets .widget_edd_related_downloads .widget-download-title,
+.download-widgets .widget_edd_related_downloads .widget-download-price {
+	display: none;
+}
+
+.download-widgets .widget_edd_related_downloads .widget-related-entries li {
+	margin-right: 12px;
+	margin-right: 0.85714286rem;
+	float: left;
+}
+
+/** ------------------- */
+
+.item-previews {
+	margin-top: 20px;
+}
+
+.item-previews a {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+/** ------------------- */
+
+[data-columns]::before { 
+	display: none; 
+}
+
+.download-grid .edd_download {
+	width: 100% !important;
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+}
+
+.edd_downloads_list[data-columns]::before {
+	content: '3 .column.size-1of3';
+}
+
+.download-grid .edd_download .edd_download_inner {
+	padding: 0;
+	margin: 0;
+}
+
+.download-grid .column {
+	margin-right: 2.5%;
+	float: left;
+}
+
+.size-1of3 {
+	width: 31% !important;
+}
+
+.size-1of2 {
+	width: 48% !important;
+}
+
+.size-1of1 {
+	width: 100% !important;
+}
+
+.edd_downloads_list[data-columns] .column:last-child {
+	margin-right: 0;
+}
+
+.download-grid article.type-download .entry-title {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.download-grid .item-archive-preview {
+	display: block;
+	position: relative;
+}
+
+.download-grid .item-archive-preview img {
+	display: block;
+	min-width: 100%;
+	height: auto;
+}
+
+.download-grid .item-archive-preview .overlay,
+.download-grid .item-archive-preview .overlay .overlay-inner {
+	-webkit-transition: all 0.3s;
+	-moz-transition:    all 0.3s;
+	transition:         all 0.3s;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+.download-grid .item-archive-preview .overlay {
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .45 );
+	opacity: 0;
+	border-radius: 3px;
+}
+
+.download-grid .item-archive-preview .overlay .overlay-inner {
+	width: 100%;
+	padding: 0 20px;
+	position: absolute;
+	top: 60%;
+	left: 0;
+
+	-webkit-transform: translate(0, -50%);
+	-moz-transform:    translate(0, -50%);
+	transform:         translate(0, -50%);
+}
+
+.download-grid .item-archive-preview .overlay strong {
+	font-size: 24px;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: normal;
+	color: #fff;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.download-grid .item-archive-preview:hover .overlay {
+	opacity: 1;
+}
+
+.download-grid .item-archive-preview:hover .overlay .overlay-inner {
+	top: 50%;
+}
+
+/* =Media queries
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+	.edd_downloads_list[data-columns]::before {
+		content: '1 .column.size-1of1';
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+	.edd_downloads_list[data-columns]::before {
+		content: '2 .column.size-1of2';
+	}
+}
+
+@media screen and (min-width: 961px) {
+    .edd_downloads_list[data-columns]::before {
+        content: '3 .column.size-1of3';
+    }
+}
