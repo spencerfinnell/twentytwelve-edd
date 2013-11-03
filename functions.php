@@ -13,7 +13,7 @@
  */
 function twentytwelve_edd_setup() {
 	// Load the textdomain
-	load_child_theme_textdomain( 'twentytwelve-edd', get_stylesheet_directory() . '/languages' )
+	load_child_theme_textdomain( 'twentytwelve-edd', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'twentytwelve_edd_setup' );
 
