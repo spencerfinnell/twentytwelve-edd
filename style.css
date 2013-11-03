@@ -179,12 +179,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	color: #757575;
 }
 
-.single-download .download-widgets:after {
+.single-download .download-widgets:after,
+.single-download .download-widgets .widget:after {
 	clear: both;
 }
 
 .single-download .download-widgets:before,
-.single-download .download-widgets:after {
+.single-download .download-widgets:after,
+.single-download .download-widgets .widget:before,
+.single-download .download-widgets .widget:after {
 	display: table;
 	content: "";
 }
@@ -402,4 +405,29 @@ Use it to make something cool, have fun, and share what you've learned with othe
     .edd_downloads_list[data-columns]::before {
         content: '3 .column.size-1of3';
     }
+}
+
+@media screen and (max-width: 756px) {
+	.item-preview,
+	.item-prices {
+		width: 100%;
+		float: none;
+	}
+
+	.item-prices {
+		margin-top: 20px;
+	}
+
+	.single-download .download-widgets.widgets-1 .widget,
+	.single-download .download-widgets.widgets-2 .widget,
+	.single-download .download-widgets.widgets-3 .widget,
+	.single-download .download-widgets.widgets-4 .widget {
+		width: 100%;
+		float: none;
+		margin-bottom: 30px;
+	}
+
+	.single-download .download-widgets .widget:last-child {
+		margin-bottom: 0;
+	}
 }

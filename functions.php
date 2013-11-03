@@ -7,6 +7,17 @@
  */
 
 /**
+ * Setup theme features/functionality
+ *
+ * @since Twenty Twelve EDD 1.0
+ */
+function twentytwelve_edd_setup() {
+	// Load the textdomain
+	load_child_theme_textdomain( 'twentytwelve-edd', get_stylesheet_directory() . '/languages' )
+}
+add_action( 'after_setup_theme', 'twentytwelve_edd_setup' );
+
+/**
  * Register and enqueue scripts
  *
  * @since Twenty Twelve EDD 1.0
@@ -38,7 +49,7 @@ function twentytwelve_edd_widgets_init() {
 	register_widget( 'TwentyTwelve_EDD_Widget_Stats' );
 	
 	register_sidebar( array(
-		'name' => __( 'Download Widget Area', 'twentytwelve' ),
+		'name' => __( 'Download Widget Area', 'twentytwelve-edd' ),
 		'id' => 'sidebar-4',
 		'description' => __( 'Appears above the download description.', 'twentytwelve-edd' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -83,7 +94,7 @@ add_filter( 'body_class', 'twentytwelve_edd_body_class' );
 /**
  * EDD Download Shortcode Attributes
  *
- * @since Marketify 1.0
+ * @since Twenty Twelve EDD 1.0
  *
  * @param array $atts
  * @return array $atts
@@ -98,6 +109,17 @@ function twentytwelve_edd_shortcode_atts_downloads( $atts ) {
 }
 add_filter( 'shortcode_atts_downloads', 'twentytwelve_edd_shortcode_atts_downloads' );
 
+/**
+ * Salvattore on the [downloads] shortcode.
+ *
+ * There is no direct filter for the output, so we have to search the
+ * whole string markup and add our data attribute where we need to.
+ *
+ * @since Twenty Twelve EDD 1.0
+ *
+ * @param string $display
+ * @return string $display
+ */
 function twentytwelve_edd_downloads_shortcode( $display ) {
 	$display = str_replace( 'class="edd_downloads_list', 'data-columns class="edd_downloads_list', $display );
 

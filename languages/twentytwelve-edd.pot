@@ -1,0 +1,85 @@
+# Copyright (C) {year} Spencer Finnell
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Twenty Twelve - EDD 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/twentytwelve-edd\n"
+"POT-Creation-Date: 2013-11-03 17:17:46+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: functions.php:41
+msgid "Download Widget Area"
+msgstr ""
+
+#: functions.php:43
+msgid "Appears above the download description."
+msgstr ""
+
+#: inc/class-widget-item-stats.php:14
+msgid "Display useful statistics about a %s."
+msgstr ""
+
+#: inc/class-widget-item-stats.php:16
+msgid "%s Stats"
+msgstr ""
+
+#: inc/class-widget-item-stats.php:19
+msgid "Title"
+msgstr ""
+
+#: inc/class-widget-item-stats.php:55
+msgid "Purchase"
+msgid_plural "Purchases"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-widget-item-stats.php:63
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-widget-item-stats.php:71
+msgid "Average Rating"
+msgstr ""
+
+#: single-download.php:28
+msgid "Tagged with:"
+msgstr ""
+
+#: single-download.php:37
+msgid "Post navigation"
+msgstr ""
+
+#: single-download.php:38
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: single-download.php:39
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+#. Theme Name of the plugin/theme
+msgid "Twenty Twelve - EDD"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wordpress.org/themes/twentytwelve"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background. For Easy Digital Downloads!"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Spencer Finnell"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://spencerfinnell.com"
+msgstr ""
