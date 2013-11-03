@@ -1,21 +1,22 @@
-# Copyright (C) {year} Spencer Finnell
+# Copyright (C) 2013 Spencer Finnell
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Twenty Twelve - EDD 1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/twentytwelve-edd\n"
-"POT-Creation-Date: 2013-11-03 17:17:46+00:00\n"
+"POT-Creation-Date: 2013-11-03 17:34:08+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: functions.php:41
+#: functions.php:52
 msgid "Download Widget Area"
 msgstr ""
 
-#: functions.php:43
+#: functions.php:54
 msgid "Appears above the download description."
 msgstr ""
 
