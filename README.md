@@ -1,6 +1,6 @@
 # Twenty Twelve EDD
 
-Twenty Twelve EDD is a child theme for the Twenty Twelve WordPress bundled theme.
+Twenty Twelve EDD is a child theme for the WordPress theme Twenty Twelve.
 
 ### Added Features
 
