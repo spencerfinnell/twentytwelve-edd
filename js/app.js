@@ -16,15 +16,22 @@ if (typeof (jQuery) != 'undefined') {
 
 				togglePriceSelection : function() {
 					var $priceOptions = $( '.edd_price_options li' );
+					var type          = $priceOptions.find( 'input' ).prop( 'type' );
+					var multi         = 'radio' == type ? false : true;
 
 					if ( $priceOptions.length === 0 )
 						return;
 
 					$priceOptions.click( function(e) {
+						if ( ! multi ) {
+							$priceOptions
+								.removeClass( 'active' )
+						}
+
 						$(this)
 							.toggleClass( 'active' )
 							.find( 'input' )
-								.attr( 'checked', ! $(this).attr( 'checked' ) );
+								.prop( 'checked', ! $(this).prop( 'checked' ) );
 					});
 				}
 
