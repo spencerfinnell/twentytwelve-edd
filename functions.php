@@ -46,7 +46,9 @@ add_action( 'wp_enqueue_scripts', 'twentytwelve_edd_enqueue_scripts' );
  * @since Twenty Twelve EDD 1.0
  */
 function twentytwelve_edd_widgets_init() {
-	register_widget( 'TwentyTwelve_EDD_Widget_Stats' );
+	if ( class_exists( 'Easy_Digital_Downloads' ) ) {
+		register_widget( 'TwentyTwelve_EDD_Widget_Stats' );
+	}
 	
 	register_sidebar( array(
 		'name' => __( 'Download Widget Area', 'twentytwelve-edd' ),
